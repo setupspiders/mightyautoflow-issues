@@ -1,13 +1,6 @@
 title: "[Briefing]"
 labels: ["General Introduction"]
 body:
-- type: input
-  id: title
-  attributes:
-    label: Title
-    description: "Provide a short, clear title that summarizes your feedback, suggestion, or issue."
-  validations:
-    required: true
 - type: textarea
   id: description
   attributes:
