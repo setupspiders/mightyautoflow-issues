@@ -1,16 +1,40 @@
 title: "[Briefing] "
 labels: ["General Introduction"]
 body:
-- type: textarea
-  id: repro
+- type: input
+  id: title
   attributes:
-    label: Reproduction steps
-    description: "How do you trigger this bug? Please walk us through it step by step."
-    value: |
-      1.
-      2.
-      3.
-      ...
+    label: Title
+    description: "Provide a short, clear title that summarizes your feedback, suggestion, or issue."
     render: bash
+  validations:
+    required: true
+
+- type: textarea
+  id: description
+  attributes:
+    label: Description
+    description: "Give a detailed explanation of your feedback, suggestion, or issue. Include relevant context, examples, or steps to reproduce if applicable."
+    render: bash
+  validations:
+    required: true
+
+- type: input
+  id: username_with_issue
+  attributes:
+    label: User Name with Issue
+    description: "Enter the name of the user who is experiencing this issue or is involved in the feedback."
+    placeholder: "e.g., Mahesh[Accounts Manager]"
+  validations:
+    required: true
+
+- type: checkboxes
+  id: requirement_status
+  attributes:
+    label: Requirement Status
+    description: "Select whether this item is required or optional."
+    options:
+      - label: Required
+      - label: Optional
   validations:
     required: true
