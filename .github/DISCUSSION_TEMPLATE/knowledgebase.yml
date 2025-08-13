@@ -4,7 +4,7 @@ body:
   - type: textarea
     id: knowledge_base
     attributes:
-      label: Issue Details Table
+      label: Khowledge base Table
       description: |
         Please fill in the table below with your issue details.  
         
