@@ -1,0 +1,18 @@
+title: "[Knowledge base]"
+labels: ["General Introduction"]
+body:
+  - type: textarea
+    id: knowledge_base
+    attributes:
+      label: Issue Details Table
+      description: |
+        Please fill in the table below with your issue details.  
+        
+        | Issue Name | Issue Description | User Name (facing this issue) | Solution |
+        |:-----------|:------------------|:-----------------------------|:---------|
+        | This is test data for c1 && r1 | This is test data for c2 && r1 | This is test data for c3 && r1 | This is test data for c4 && r1 |
+        | This is test data for c1 && r2 | This is test data for c2 && r2 | This is test data for c3 && r2 | This is test data for c4 && r2 |
+      placeholder: "Replace the sample data in the table with your own issue details."
+    validations:
+      required: true
+
