@@ -2,17 +2,34 @@ title: "[Knowledge Base]"
 labels: ["General Introduction"]
 body:
   - type: textarea
-    id: knowledge_base
+    id: issue_name
     attributes:
-      label: Khowledge base Table
-      description: |
-        Please fill in the table below with your issue details.  
-        
-        | Issue Name | Issue Description | User Name (facing this issue) | Solution |
-        |:-----------|:------------------|:-----------------------------|:---------|
-        | This is test data for c1 && r1 | This is test data for c2 && r1 | This is test data for c3 && r1 | This is test data for c4 && r1 |
-        | This is test data for c1 && r2 | This is test data for c2 && r2 | This is test data for c3 && r2 | This is test data for c4 && r2 |
-      placeholder: "Replace the sample data in the table with your own issue details."
+      label: Issue Name
+      description: "Enter a short and clear name for the issue."
+      placeholder: "E.g., Login page not loading"
     validations:
       required: true
-
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Issue Description
+      description: "Describe the issue in detail, including any steps to reproduce it."
+      placeholder: "Provide detailed information about the problem..."
+    validations:
+      required: true
+  - type: textarea
+    id: user_name
+    attributes:
+      label: User Name (facing this issue)
+      description: "Enter the name of the user who encountered this issue."
+      placeholder: "E.g., Mahesh[Accounts Manager]"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution (if any)
+      description: "Describe any solution, workaround, or fix that has been tried."
+      placeholder: "E.g., Cleared browser cache and reloaded"
+    validations:
+      required: false
