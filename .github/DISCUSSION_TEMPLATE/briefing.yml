@@ -1,4 +1,4 @@
-title: "[Briefing] "
+title: "[Briefing]"
 labels: ["General Introduction"]
 body:
 - type: input
@@ -6,10 +6,8 @@ body:
   attributes:
     label: Title
     description: "Provide a short, clear title that summarizes your feedback, suggestion, or issue."
-    render: bash
   validations:
     required: true
-
 - type: textarea
   id: description
   attributes:
@@ -18,7 +16,6 @@ body:
     render: bash
   validations:
     required: true
-
 - type: input
   id: username_with_issue
   attributes:
@@ -27,7 +24,6 @@ body:
     placeholder: "e.g., Mahesh[Accounts Manager]"
   validations:
     required: true
-
 - type: checkboxes
   id: requirement_status
   attributes:
